@@ -10,6 +10,9 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-heading);
+  --font-arcade: var(--font-arcade);
+  --font-arcade-body: var(--font-arcade-body);
+  --font-arcade-mono: var(--font-arcade-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -46,6 +49,14 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  /* ArcadeNeon custom colors */
+  --color-arcade-pink: var(--arcade-pink);
+  --color-arcade-cyan: var(--arcade-cyan);
+  --color-arcade-lime: var(--arcade-lime);
+  --color-arcade-bg: var(--arcade-bg);
+  --color-arcade-surface: var(--arcade-surface);
+  --color-arcade-muted: var(--arcade-muted);
+  --color-arcade-border: var(--arcade-border);
 }
 
 :root {
@@ -116,6 +127,38 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.56 0.021 213.5);
 }
+
+/* ============================================
+   ArcadeNeon Design System
+   ============================================ */
+:root {
+  --arcade-pink: #FF006E;
+  --arcade-cyan: #00F0FF;
+  --arcade-lime: #39FF14;
+  --arcade-bg: #0A0A14;
+  --arcade-surface: #12121F;
+  --arcade-muted: #9999AA;
+  --arcade-border: #2A2A3E;
+}
+
+@keyframes neon-pulse-pink {
+  0%, 100% { box-shadow: 0 0 6px #FF006E4d, 0 0 12px #FF006E33; }
+  50% { box-shadow: 0 0 12px #FF006E80, 0 0 24px #FF006E4d; }
+}
+
+@keyframes neon-pulse-cyan {
+  0%, 100% { box-shadow: 0 0 10px #00F0FF4d, 0 0 20px #00F0FF33; }
+  50% { box-shadow: 0 0 20px #00F0FF80, 0 0 40px #00F0FF4d; }
+}
+
+@keyframes neon-pulse-lime {
+  0%, 100% { box-shadow: 0 0 6px #39FF144d, 0 0 12px #39FF1433; }
+  50% { box-shadow: 0 0 12px #39FF1480, 0 0 24px #39FF144d; }
+}
+
+.animate-neon-pulse-pink { animation: neon-pulse-pink 2s ease-in-out infinite; }
+.animate-neon-pulse-cyan { animation: neon-pulse-cyan 2s ease-in-out infinite; }
+.animate-neon-pulse-lime { animation: neon-pulse-lime 2s ease-in-out infinite; }
 
 @layer base {
   * {
