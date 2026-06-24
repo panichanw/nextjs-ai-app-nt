@@ -1,6 +1,6 @@
 ---
 
-## Goal
+## Goal12
 สร้างหน้า Contact Us ใน `(front)` route group — **public ไม่ต้อง auth** — form รับข้อมูลแล้วส่ง email ผ่าน Route Handler
 
 ---
