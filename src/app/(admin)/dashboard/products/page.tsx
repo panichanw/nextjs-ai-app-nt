@@ -3,6 +3,8 @@ import { headers } from "next/headers"
 import { redirect } from "next/navigation"
 import { ProductsClient } from "./products-client"
 
+export const dynamic = "force-dynamic"
+
 export default async function ProductsPage() {
   const session = await auth.api.getSession({ headers: await headers() })
 
