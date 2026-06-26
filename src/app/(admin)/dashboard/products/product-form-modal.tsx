@@ -138,7 +138,7 @@ export function ProductFormModal({
               <Input
                 type="number"
                 step="0.01"
-                {...form.register("price")}
+                {...form.register("price", { valueAsNumber: true })}
                 placeholder="0.00"
               />
               <FieldError errors={form.formState.errors.price ? [{ message: form.formState.errors.price.message }] : []} />
