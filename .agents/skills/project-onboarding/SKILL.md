@@ -4,8 +4,8 @@ description: Use this skill when a developer asks how to set up, run, or underst
 compatibility: Node.js 22+, npm, Git, MariaDB
 license: MIT
 metadata:
-  author: NT
-  version: "3.0.0"
+  author: NT-P
+  version: "4.0.0"
 ---
 
 # Project Onboarding Skill
