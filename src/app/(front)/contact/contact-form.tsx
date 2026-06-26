@@ -154,7 +154,7 @@ export function ContactForm() {
             }}
             onFocus={e => {
               if (!form.formState.errors.name) {
-                e.currentTarget.style.borderColor = arcadeInputFocus.borderColor
+                e.currentTarget.style.borderColor = arcadeInputFocus.borderColor as string
                 e.currentTarget.style.borderWidth = String(arcadeInputFocus.borderWidth)
                 e.currentTarget.style.boxShadow = arcadeInputFocus.boxShadow as string
               }
@@ -194,7 +194,7 @@ export function ContactForm() {
             }}
             onFocus={e => {
               if (!form.formState.errors.email) {
-                e.currentTarget.style.borderColor = arcadeInputFocus.borderColor
+                e.currentTarget.style.borderColor = arcadeInputFocus.borderColor as string
                 e.currentTarget.style.borderWidth = String(arcadeInputFocus.borderWidth)
                 e.currentTarget.style.boxShadow = arcadeInputFocus.boxShadow as string
               }
@@ -237,7 +237,7 @@ export function ContactForm() {
             }}
             onFocus={e => {
               if (!form.formState.errors.message) {
-                e.currentTarget.style.borderColor = arcadeInputFocus.borderColor
+                e.currentTarget.style.borderColor = arcadeInputFocus.borderColor as string
                 e.currentTarget.style.borderWidth = String(arcadeInputFocus.borderWidth)
                 e.currentTarget.style.boxShadow = arcadeInputFocus.boxShadow as string
               }
