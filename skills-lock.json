@@ -1,6 +1,24 @@
 {
   "version": 1,
   "skills": {
+    "deploy-docker-production": {
+      "source": "panichanw/my-agent-skill-nt",
+      "sourceType": "github",
+      "skillPath": "skills/deploy-docker-production/SKILL.md",
+      "computedHash": "be5848037d25a3b7260b130be122dc4ac282c035f13e60c6c140ce86637d5301"
+    },
+    "git-commit-guide": {
+      "source": "panichanw/my-agent-skill-nt",
+      "sourceType": "github",
+      "skillPath": "skills/git-commit-guide/SKILL.md",
+      "computedHash": "88f0ed32096098023f647be68d8656b2d53c44746694ba0c4cc6e92aa842a425"
+    },
+    "project-onboarding": {
+      "source": "panichanw/my-agent-skill-nt",
+      "sourceType": "github",
+      "skillPath": "skills/project-onboarding/SKILL.md",
+      "computedHash": "397852382296ea791e94e763b25ec1ca255b5b05ac57b6db6feb27b095d44140"
+    },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
       "sourceType": "github",
